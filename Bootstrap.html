@@ -11,33 +11,40 @@
 </head>
 <body>
 	<!--BARRE DE NAVIGATION-->
-	<nav class="navbar navbar-expand">
+	<nav class="col navbar navbar-expand-lg bg-dark navbar-dark">
 		<a class="navbar-brand" href="Bootstrap.html">Info School</a>
-		<ul class="navbar-nav">
-		   <li class="nav-item active">
-			  <a class="nav-link" href="Bootstrap.html">Accueil</a>
-		   </li>
-		   <li class="nav-item">
-			  <a class="nav-link" href="#">Cours</a>
-		   </li>
-		</ul>
-	</nav>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+		   <span class="navbar-toggler-icon"></span>
+		</button>
+		<div id="navbarContent" class="collapse navbar-collapse">
+		   <ul class="navbar-nav">
+			  <li class="nav-item active">
+				 <a class="nav-link" href="Bootstrap.html">Accueil</a>
+			  </li>
+			  <li class="nav-item">
+				 <a class="nav-link" target="_blank" href="https://openclassrooms.com/fr/courses/6391096-creez-des-sites-web-responsive-avec-bootstrap-4/6503673-ajoutez-des-composants-dinterface-utilisateur">Cours</a>
+			  </li>
+		   </ul>
+		</div>
+	 </nav>
 	<!--CONTENU DU SITE-->
 	<div class="container">
 		<div class="row">
-			<div class="col">
-				HEADER
+			<div class="col-12">
+				<div class="jumbotron">
+					<h1>Bienvenue sur Info School !</h1>
+				 </div>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col">
+			<div class="col-12">
 				<p>En résumé
 					Les classes de conteneur, ligne et colonne nécessitent une hiérarchie spécifique lors de la création d'une grille dans Bootstrap 4.
 				</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col">
+			<div class="col-12">
 				<p>La grille de Bootstrap est une grille à 12 colonnes.
 					
 					Utilisez les variations des classes de colonnes pour choisir entre les calculs automatiques de la largeur des colonnes du framework et les largeurs de colonnes explicites.
@@ -45,19 +52,19 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col">
+			<div class="col-12">
 				<p>
 					Maintenant que vous avez appris à implémenter la structure de la page d'accueil à l'aide de la grille de Bootstrap, vous êtes prêt à apprendre à la rendre responsive en fonction des tailles d'écran.
 				</p>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col">
-				<img src="assets/point darret.png" alt="image récapitumative des points d'arrêt et tailles d'écran">
+			<div col-6 col-md-4 col-lg-3>
+				<img class="col-12" src="assets/point darret.png" alt="image récapitumative des points d'arrêt et tailles d'écran">
 			</div>
 		</div>
 		<div class="row">
-			<div class="col">
+			<div class="col-12">
 				<p>approche mobile-first, cela signifie que si vous n'ajoutez pas de modificateur de classe relatif à une taille d’écran supérieure, Bootstrap affichera automatiquement les éléments et composants de la grille dans les plus petits écrans et conservera la même mise en page, même si la taille de l'écran augmente.</p>
 			</div>
 		</div>
